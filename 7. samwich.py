@@ -7,6 +7,7 @@ BREAD_PRICES = {'Wholemeal': 1.00, 'White': 1.00, 'Cheesy White': 1.50, 'Gluten 
 MEAT_PRICES = {'Chicken': 1.00, 'Beef': 0.80, 'Salami': 1.20, 'Vegan Slice': 1.40}
 GARNISH_PRICES = {'Onion': 2.69, 'Tomato': 3.00, 'Lettuce': 3.30, 'Cheese': {1.69, 1.00, 2.00, 2.50}}
 
+
 # Function to get the user's selection for each ingredient category
 def get_selection(ingredient_prices):
     print('Please select an option:')
@@ -15,10 +16,12 @@ def get_selection(ingredient_prices):
     selection = input('Enter the number corresponding to your selection: ')
     return selection
 
+
 # Function to calculate the total cost of the sandwich
 def calculate_cost(bread_selection, meat_selection, garnish_selection):
     cost = BREAD_PRICES[bread_selection] + MEAT_PRICES[meat_selection] + GARNISH_PRICES[garnish_selection]
     return cost
+
 
 # Main program loop
 while True:
